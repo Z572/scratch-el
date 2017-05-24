@@ -6,7 +6,7 @@
       (append 
        '(:name scratch
 	       :type git
-	       :url "git@github.com:cbbrowne/scratch-el.git"
+	       :url "git@github.com:ieure/scratch-el.git"
 	       :load-path "."
 	       :info "."
 	       :build ("make")

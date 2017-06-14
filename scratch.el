@@ -147,8 +147,8 @@ for those buffers."
     (cond ((bufferp buf) (pop-to-buffer buf)) ; Existing scratch buffer
           (t                                  ; New scratch buffer
            (let ((contents (when (region-active-p)
-                             (buffer-substring (region-beginning)
-                                               (region-end)))))
+                             (buffer-substring-no-properties
+                              (region-beginning) (region-end)))))
              (setq buf (get-buffer-create name))
              (pop-to-buffer buf)
              (let ((scratch-buffer t))

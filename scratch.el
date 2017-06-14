@@ -65,6 +65,7 @@
     (sql-interactive-mode . sql-mode)
     (shell-mode . sh-mode)
     (inferior-python-mode . python-mode)
+    (cider-repl-mode . clojure-mode)
     (inferior-tcl-mode . tcl-mode)
     (inferior-octave-mode . octave-mode))
   "Alist of mappings from major modes to major modes for SCRATCH.
